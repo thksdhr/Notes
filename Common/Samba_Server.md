@@ -3,7 +3,7 @@
 ## 安裝SMB Server  
 **Ubuntu安裝：**`apt install samba samba-common`
 
-***
+---
 
 ## 配置文件  
 **所在目錄：**`/etc/samba/smb.conf`  
@@ -48,7 +48,7 @@ writable=yes                            # 是否可写
       admin users = user1                        # 设置共享目录的管理员，具有完全权限
 ```
 
-***
+---
 
 ## 常用指令
 
@@ -64,7 +64,7 @@ smbpasswd -n                                     # 密碼重置
 
 查詢已經存在的samba用戶：`pdbedit -L`  
 
-***
+---
 
 ## 常見問題
 
