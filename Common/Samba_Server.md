@@ -1,14 +1,14 @@
-# 關於Linux下部署SMB Server的筆記
+# Linux下部署SMB Server
 
-## 安裝SMB Server  
-**Ubuntu安裝：**`apt install samba samba-common`
+## 安装SMB Server  
+**Ubuntu安装：**`apt install samba samba-common`
 
 ---
 
 ## 配置文件  
-**所在目錄：**`/etc/samba/smb.conf`  
+**所在目录：**`/etc/samba/smb.conf`  
 
-*創建共享文件夾示例>>>添加與配置文件末尾*
+*创建共享文件夹示例>>>添加与配置文件末尾*
 ```
 [share]                                    # 自定义共享名
 comment=this is Linux share directory    # 描述符，是给系统管理员看的
@@ -17,7 +17,7 @@ public=yes                                # 是否公开，也就是是否能在
 writable=yes                            # 是否可写
 ```
 
-*更多參數詳解*
+*更多参数详解*
 ```
 [共享文件夹]                                      # 自定义共享名
       comment = Home Directories                 # 描述符，是给系统管理员看的
@@ -52,20 +52,20 @@ writable=yes                            # 是否可写
 
 ## 常用指令
 
-創建帳號及密碼管理：`smbpasswd`  
-*samba用戶需要以系統用戶爲基礎，才能創建爲samba用戶*
-**常用參數**
+创建帐号及密码管理：`smbpasswd`
+*samba用户需要以系统用户为基础，才能创建为samba用户*
+**常用参数**
 ```
-smbpasswd -a                                     # 添加用戶
-smbpasswd -x                                     # 刪除用戶
-smbpasswd -d                                     # 凍結用戶
-smbpasswd -n                                     # 密碼重置
+smbpasswd -a                                     # 添加用户
+smbpasswd -x                                     # 删除用户
+smbpasswd -d                                     # 冻结用户
+smbpasswd -n                                     # 密码重置
 ```
 
-查詢已經存在的samba用戶：`pdbedit -L`  
+查询已经存在的samba用户：`pdbedit -L`  
 
 ---
 
 ## 常見問題
 
-1. Samba不允許同一台電腦用兩個不同的賬戶連接--*解決方式WindowsCMD輸入*`net use * /del /y`  
+1. Samba不允许同一台电脑用两个不同的账户连接--*解决方式WindowsCMD输入*`net use * /del /y`  

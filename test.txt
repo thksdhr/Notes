@@ -1,0 +1,12 @@
+# 進入路徑
+cd /home/taozig/DiskBox/Program/qbittorrent-enhanced-nox
+# 執行程序
+screen -dmS qbittorrent ./qbittorrent-nox --webui-port=19120 --profile=Config
+
+
+# 進入路徑
+cd /home/taozig/DiskBox/Program/ddns-go
+# 執行程序
+screen -dmS ddns-go ./ddns-go -c "config.yaml" -l ":19125" -noweb
+# 執行命令
+# sh /home/taozig/DiskBox/Program/ddns-go/start.sh

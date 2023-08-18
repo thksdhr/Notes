@@ -1,10 +1,11 @@
 # 這是一些關於Linux的筆記
 
-## *基礎指令*
-1. [硬盤相關]
+## *基础指令*
+1. [磁盘相关]
+2. [语言相关](Base/Language.md)
 
 ---
 
-## *一些通用的服務*
-1. [Samba服務器部署](Common/Samba_Server.md)  
-2.[MySQL服務器部署與啓用遠程訪問](Common/MySQL_Server.md)
+## *部署服务*
+1. [Linux Samba服务器部署](Common/Samba_Server.md)  
+2. [Linux MySQL服务器部署与启用远程访问](Common/MySQL_Server.md)

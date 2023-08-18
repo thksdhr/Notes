@@ -1,7 +1,7 @@
-# 關於MySQL服務器的安裝與遠程連接
+# 关于MySQL服务器的安装与远程连接
 
-## 安裝MySQL
-**Ubuntu安裝:** `apt install mysql-server`
+## 安装MySQL
+**Ubuntu安装:** `apt install mysql-server`
 
 ## 初始化配置文件
 **Ubuntu** `mysql_secure_installation`
@@ -10,6 +10,6 @@
 
 `vim /etc/mysql/mysql.conf.d/mysqld.cnf`
 
-***將以下內容註釋或者刪除***
+***将以下内容注释或者删除***
 
 `mysql_secure_installation`
